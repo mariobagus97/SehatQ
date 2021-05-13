@@ -35,6 +35,7 @@ class PurchaseHistoryViewController: BaseViewController<PurchaseHistoryViewModel
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavigationBar()
+        viewModel.GetHistoryPurchase()
     }
     
     override func gotoProductDetail(product: ProductPromo) {
